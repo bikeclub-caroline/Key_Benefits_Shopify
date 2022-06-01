@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+}
+
+.key-benefits-ctnr {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  max-width: 1200px;
+
+  background: #f2f2f2;
+  padding: 0 1.5rem;
+}
+
+/* icon */
+.svg-wrapper {
+  width: 142px;
+  height: 134px;
+}
+
+.benef-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benef-card h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  margin: 12px 0 12px 0;
+}
+
+/* Text */
+.text-ctnr {
+  width: auto;
+}
+.text-ctnr p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* tablet view */
+@media screen and (min-width: 1024px) {
+  .benef-cards-ctnr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .benef-card {
+    background-color: lightblue;
+  }
+
+  .svg-wrapper {
+    width: 120px;
+    height: 166px;
+    margin-right: 64px;
+  }
+}
+
+/* from small laptops to large screens */
+
+@media screen and (min-width: 1248px) {
+  .benef-cards-ctnr {
+    grid-column-gap: 81px;
+    grid-row-gap: 80px;
+  }
+  .benef-card {
+    display: flex;
+    flex-direction: row;
+    padding-right: 81px;
+  }
+
+  .text-ctnr {
+    text-align: left;
+  }
+}
