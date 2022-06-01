@@ -9,7 +9,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   background: #f2f2f2;
   padding: 0 1.5rem;
 }
@@ -29,6 +29,11 @@ html {
   flex-basis: 100%;
 }
 
+div.benef-card:first-child,
+.benef-card:nth-child(2) {
+  margin-bottom: 64px;
+}
+
 /* Title and paragraph wrapper */
 .text-ctnr {
   display: flex;
@@ -43,7 +48,7 @@ html {
   line-height: 30px;
   text-align: center;
   width: fit-content;
-  margin: 12px 0 12px 0;
+  margin-bottom: 12px;
 }
 
 /* Paragraph  */
@@ -66,14 +71,13 @@ html {
   }
 
   .benef-card {
-    background-color: lightblue;
     flex-basis: 45%;
     max-width: 45%;
   }
 
   div.benef-card:first-child,
   .benef-card:nth-child(2) {
-    margin-bottom: 96px;
+    margin-bottom: 64px;
   }
 
   .svg-wrapper {
@@ -90,10 +94,20 @@ html {
     flex-direction: row;
   }
 
+  div.benef-card:first-child,
+  .benef-card:nth-child(2) {
+    margin-bottom: 128px;
+  }
+
   .text-ctnr {
-        align-items: flex-start;
+    align-items: flex-start;
     margin-left: 48px;
   }
+
+  .benef-card h3 {
+    margin-bottom: 20px;
+  }
+
   .text-ctnr p {
     text-align: start;
   }
