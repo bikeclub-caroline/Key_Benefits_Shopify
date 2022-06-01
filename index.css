@@ -2,29 +2,37 @@ html {
   box-sizing: border-box;
 }
 
+/* Mobile view ___________*/
 .key-benefits-ctnr {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 1200px;
-
   background: #f2f2f2;
   padding: 0 1.5rem;
 }
 
-/* icon */
+/* Icon */
 .svg-wrapper {
   width: 142px;
   height: 134px;
 }
 
+/* Card */
 .benef-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-basis: 100%;
 }
 
+/* Title and paragraph wrapper */
+.text-ctnr {
+  width: auto;
+}
+
+/* Title */
 .benef-card h3 {
   font-weight: 700;
   font-size: 25px;
@@ -33,10 +41,7 @@ html {
   margin: 12px 0 12px 0;
 }
 
-/* Text */
-.text-ctnr {
-  width: auto;
-}
+/* Paragraph  */
 .text-ctnr p {
   font-weight: 400;
   font-size: 20px;
@@ -45,18 +50,16 @@ html {
   margin-top: 0;
 }
 
-/* tablet view */
+/* Tablet view ___________*/
 @media screen and (min-width: 1024px) {
   .benef-cards-ctnr {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 4rem;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
   .benef-card {
     background-color: lightblue;
+    flex-basis: 45%;
   }
 
   .svg-wrapper {
@@ -66,16 +69,10 @@ html {
   }
 }
 
-/* from small laptops to large screens */
+/* from small laptops to large screens ___________ */
 
 @media screen and (min-width: 1248px) {
-  .benef-cards-ctnr {
-    grid-column-gap: 81px;
-    grid-row-gap: 80px;
-  }
   .benef-card {
-    display: flex;
-    flex-direction: row;
     padding-right: 81px;
   }
 
